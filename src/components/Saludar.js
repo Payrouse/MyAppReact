@@ -8,8 +8,3 @@ export default function Saludar(props) {
     </Text>
   );
 }
-
-Saludar.defaultProps = {
-  firstName: "Pedro",
-  lastName: "Mite",
-};
