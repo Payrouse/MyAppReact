@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
 
 export default function HomeScreen(props) {
   const { navigation } = props;
@@ -8,12 +14,12 @@ export default function HomeScreen(props) {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>I am Home Screen</Text>
       <TouchableOpacity style={styles.button} onPress={goToSetting}>
         <Text style={styles.text}>Settings</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 

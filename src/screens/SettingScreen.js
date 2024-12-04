@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
 
 export default function SettingScreen({ navigation }) {
   const goBackToHome = () => {
@@ -7,7 +13,7 @@ export default function SettingScreen({ navigation }) {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>SettingScreen</Text>
       <Text>SettingScreen</Text>
       <Text>SettingScreen</Text>
@@ -15,7 +21,7 @@ export default function SettingScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={goBackToHome}>
         <Text style={styles.text}>Go Back to Home</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
